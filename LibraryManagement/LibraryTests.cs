@@ -28,6 +28,7 @@ namespace LibraryManagement
                 Console.WriteLine($"{book.Id}: {book.Title} by {book.Author}");
             Console.ResetColor();
 
+
             // Add and Test Users
             userRepo.AddUser(new User { Id = 1, Name = "Soheil Imani", Email = "soheil@example.com" });
             userRepo.AddUser(new User { Id = 2, Name = "Sara Ahmadi", Email = "sara@example.com" });
@@ -37,6 +38,7 @@ namespace LibraryManagement
             foreach (var user in userRepo.GetAllUsers())
                 Console.WriteLine($"{user.Id}: {user.Name} ({user.Email})");
             Console.ResetColor();
+
 
             // Loan and Test
             Console.WriteLine("\nAttempting to loan books...");
